@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/btm_events"
+        android:icon="@drawable/ic_dashboard"
+        android:title="Events" />
+    <item
+        android:id="@+id/btm_courses"
+        android:icon="@drawable/ic_book"
+        android:title="Courses" />
+    <item
+        android:id="@+id/btm_my_courses"
+        android:icon="@drawable/ic_my_courses"
+        android:title="MyCourses" />
+    <item
+        android:id="@+id/btm_notification"
+        android:icon="@drawable/ic_notification"
+        android:title="Notification" />
+</menu>
