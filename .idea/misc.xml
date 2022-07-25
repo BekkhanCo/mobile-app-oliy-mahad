@@ -4,27 +4,21 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Oliy-mahad/mobile/mobile-app-oliy-mahad/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1435" />
+        <entry key="..\:/Oliy-mahad/mobile/mobile-app-oliy-mahad/app/src/main/res/drawable/card_post.xml" value="0.1465" />
         <entry key="..\:/Oliy-mahad/mobile/mobile-app-oliy-mahad/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1435" />
         <entry key="..\:/Oliy-mahad/mobile/mobile-app-oliy-mahad/app/src/main/res/drawable/icon_home.xml" value="0.1435" />
         <entry key="..\:/Oliy-mahad/mobile/mobile-app-oliy-mahad/app/src/main/res/drawable/splash_head_background.xml" value="0.1405" />
         <entry key="..\:/Oliy-mahad/mobile/mobile-app-oliy-mahad/app/src/main/res/drawable/text_oliy_mahad.xml" value="0.1435" />
         <entry key="..\:/Oliy-mahad/mobile/mobile-app-oliy-mahad/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Oliy-mahad/mobile/mobile-app-oliy-mahad/app/src/main/res/layout/activity_post.xml" value="0.16485507246376813" />
+        <entry key="..\:/Oliy-mahad/mobile/mobile-app-oliy-mahad/app/src/main/res/layout/activity_post.xml" value="0.22" />
         <entry key="..\:/Oliy-mahad/mobile/mobile-app-oliy-mahad/app/src/main/res/layout/activity_splash.xml" value="0.22" />
         <entry key="..\:/Oliy-mahad/mobile/mobile-app-oliy-mahad/app/src/main/res/layout/activity_splash2.xml" value="0.22" />
+        <entry key="..\:/Oliy-mahad/mobile/mobile-app-oliy-mahad/app/src/main/res/layout/card_post.xml" value="0.25" />
         <entry key="..\:/Oliy-mahad/mobile/mobile-app-oliy-mahad/app/src/main/res/layout/courses_fragment.xml" value="0.20416666666666666" />
         <entry key="..\:/Oliy-mahad/mobile/mobile-app-oliy-mahad/app/src/main/res/layout/events_fragment.xml" value="0.17255434782608695" />
         <entry key="..\:/Oliy-mahad/mobile/mobile-app-oliy-mahad/app/src/main/res/layout/my_courses_fragment.xml" value="0.17255434782608695" />
         <entry key="..\:/Oliy-mahad/mobile/mobile-app-oliy-mahad/app/src/main/res/layout/notifications_fragment.xml" value="0.17255434782608695" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17028985507246377" />
-<<<<<<< HEAD
-        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.12" />
-        <entry key="app/src/main/res/layout/courses_fragment.xml" value="0.17028985507246377" />
-        <entry key="app/src/main/res/layout/events_fragment.xml" value="0.17028985507246377" />
-        <entry key="app/src/main/res/layout/my_courses_fragment.xml" value="0.17028985507246377" />
-        <entry key="app/src/main/res/layout/notifications_fragment.xml" value="0.17028985507246377" />
-=======
->>>>>>> 13cfe478290a4516907b52cdcfaf84023f2d0b2a
         <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.19375" />
       </map>
     </option>
