@@ -9,6 +9,7 @@
 
     <!--    view flipper chala -->
     <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/imageSlider"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         app:iss_auto_cycle="true"
@@ -21,6 +22,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/events_recycler"
+        android:padding="8dp"
+        tools:listitem="@layout/card_post"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="70dp"
