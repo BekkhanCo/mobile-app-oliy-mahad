@@ -15,7 +15,7 @@
         app:iss_auto_cycle="true"
         app:iss_period="2000"
         app:iss_delay="0"
-        android:background="@color/yellow"
+        android:background="@drawable/image_not_found"
       />
 
     <!--    view flipper chala -->
