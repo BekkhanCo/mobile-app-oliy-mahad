@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.denzcoskun.imageslider.ImageSlider
+import com.denzcoskun.imageslider.models.SlideModel
 import com.example.oliymahad.R
 import com.example.oliymahad.databinding.ActivityMainBinding
 import com.example.oliymahad.ui.fragments.CourseFragment
@@ -25,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavBar.setOnNavigationItemSelectedListener(navListener)
         supportFragmentManager.beginTransaction().replace(R.id.fragmentContainer, EventFragment())
             .commit()
+
     }
 
     private val navListener =
