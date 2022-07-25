@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical">
@@ -17,26 +18,32 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="147dp"
-            android:layout_height="275dp"
-            android:adjustViewBounds="true"
-            android:background="@drawable/oliy_mahad_logo"
-            android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#0053953D"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="8dp">
 
-        </LinearLayout>
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_margin="20dp"
+                android:adjustViewBounds="true"
+                android:background="#00F6CC51"
+                android:orientation="vertical"
+                android:src="@drawable/oliy_mahad_logo" />
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:text="www.oliy-mahad.uz"
-            android:textSize="24sp"
             android:layout_marginTop="10dp"
-            />
+            android:text="www.oliy-mahad.uz"
+            android:textSize="24sp" />
     </LinearLayout>
 </FrameLayout>
