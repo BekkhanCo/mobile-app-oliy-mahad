@@ -8,6 +8,10 @@
         <entry key="..\:/Oliy-mahad/mobile/mobile-app-oliy-mahad/app/src/main/res/layout/activity_post.xml" value="0.16485507246376813" />
         <entry key="..\:/Oliy-mahad/mobile/mobile-app-oliy-mahad/app/src/main/res/layout/activity_splash.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17028985507246377" />
+        <entry key="app/src/main/res/layout/courses_fragment.xml" value="0.17028985507246377" />
+        <entry key="app/src/main/res/layout/events_fragment.xml" value="0.17028985507246377" />
+        <entry key="app/src/main/res/layout/my_courses_fragment.xml" value="0.17028985507246377" />
+        <entry key="app/src/main/res/layout/notifications_fragment.xml" value="0.17028985507246377" />
         <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.19375" />
       </map>
     </option>
