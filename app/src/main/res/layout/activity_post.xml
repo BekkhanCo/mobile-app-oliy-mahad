@@ -23,8 +23,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" <- ORTGA"
-                android:textColor="@color/white"
+                android:text=" ⬅ ORTGA"
+                android:textColor="@color/yellow"
                 android:textSize="8pt" />
         </LinearLayout>
         //Oliy mahad text
@@ -32,16 +32,16 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:paddingStart="25dp"
+            android:paddingStart="35dp"
             android:gravity="center_vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Oliy Mahad"
+                android:text="oliy mahad"
                 android:textColor="@color/white"
                 android:textSize="25dp"
-                android:textStyle="bold" />
+                />
         </LinearLayout>
 
         <LinearLayout
