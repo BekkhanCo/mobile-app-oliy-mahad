@@ -16,6 +16,7 @@
         <entry key="app/src/main/res/drawable/register_back.xml" value="0.1555" />
         <entry key="app/src/main/res/drawable/search_back.xml" value="0.1555" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17028985507246377" />
+        <entry key="app/src/main/res/layout/activity_main_splash.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_post.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.19375" />

@@ -22,7 +22,7 @@
         android:id="@+id/bottom_nav_bar"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="@color/green"
+        android:background="#53953D"
         android:elevation="0dp"
         app:itemIconTint="@color/yellow"
         app:itemTextColor="@color/yellow"
