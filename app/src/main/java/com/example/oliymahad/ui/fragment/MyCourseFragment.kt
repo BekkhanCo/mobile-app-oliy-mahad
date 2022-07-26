@@ -1,4 +1,4 @@
-package com.example.oliymahad.ui.fragments
+package com.example.oliymahad.ui.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.oliymahad.R
 
-class NotificationFragment : Fragment(R.layout.notifications_fragment) {
+class MyCourseFragment:Fragment(R.layout.my_courses_fragment) {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
