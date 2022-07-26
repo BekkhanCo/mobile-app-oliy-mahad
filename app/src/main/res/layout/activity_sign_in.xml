@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/green"
-    tools:context=".ui.Register">
+    tools:context=".ui.SignIn">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,12 +15,12 @@
         android:gravity="center"
         android:orientation="vertical"
         android:paddingHorizontal="15dp"
-        android:paddingBottom="45dp">
+        android:paddingBottom="55dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="50dp"
             android:orientation="horizontal">
 
             <TextView
@@ -43,7 +43,7 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/user_name"
+            android:id="@+id/sign_in_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edt_back"
@@ -52,31 +52,9 @@
             android:paddingHorizontal="18dp"
             android:paddingVertical="8dp" />
 
-        <EditText
-            android:id="@+id/user_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/edt_back"
-            android:hint="email"
-            android:inputType="textEmailAddress"
-            android:paddingHorizontal="18dp"
-            android:paddingVertical="8dp" />
-
 
         <EditText
-            android:id="@+id/user_phone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/edt_back"
-            android:hint="phone number"
-            android:inputType="phone"
-            android:paddingHorizontal="18dp"
-            android:paddingVertical="8dp" />
-
-        <EditText
-            android:id="@+id/user_password"
+            android:id="@+id/sign_in_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="20dp"
@@ -90,11 +68,11 @@
 
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/register_btn"
+            android:id="@+id/sign_in_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="20dp"
-            android:text="Register"
+            android:text="Sign In"
             app:cornerRadius="20dp" />
 
         <LinearLayout
@@ -105,15 +83,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="If you have an account, please "
+                android:text="If you have not an account, please "
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/go_sign_in"
+                android:id="@+id/go_register"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="sign in"
+                android:text="register"
                 android:textColor="@color/blue"
                 android:textSize="16sp" />
         </LinearLayout>

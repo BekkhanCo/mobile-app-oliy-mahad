@@ -1,9 +1,8 @@
 package com.example.oliymahad.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
-import com.example.oliymahad.R
+import androidx.appcompat.app.AppCompatActivity
 import com.example.oliymahad.databinding.ActivityRegisterBinding
 
 class Register : AppCompatActivity() {
@@ -12,6 +11,8 @@ class Register : AppCompatActivity() {
         binding = ActivityRegisterBinding.inflate(LayoutInflater.from(this))
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-
+        binding.goSignIn.setOnClickListener {
+            onBackPressed()
+        }
     }
 }
