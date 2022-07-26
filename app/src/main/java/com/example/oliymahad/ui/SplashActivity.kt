@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
-import com.example.oliymahad.R
 import com.example.oliymahad.databinding.ActivitySplashBinding
 
 
