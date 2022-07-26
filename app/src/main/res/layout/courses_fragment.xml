@@ -10,6 +10,7 @@
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="-16dp"
         tools:layout_editor_absoluteY="-353dp"
-        tools:listitem="@layout/courses_item" />
+        tools:listitem="@layout/courses_item"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
