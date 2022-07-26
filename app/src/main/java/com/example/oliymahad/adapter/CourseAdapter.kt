@@ -13,6 +13,8 @@ class CourseAdapter(private val list: ArrayList<CourseModel>, val context: Conte
         RecyclerView.ViewHolder(binding.root) {
             fun bind(pos:Int){
                 val currentItem=list[pos]
+                binding.courseTitle.text=currentItem.name
+                binding.courseDescription.text=currentItem.description
             }
     }
 
