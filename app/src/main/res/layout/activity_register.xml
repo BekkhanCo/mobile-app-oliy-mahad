@@ -48,7 +48,7 @@
             android:background="@drawable/edt_back"
             android:hint="name"
             android:inputType="textPersonName"
-            android:paddingHorizontal="5dp"
+            android:paddingHorizontal="18dp"
             android:paddingVertical="8dp" />
 
         <EditText
@@ -59,7 +59,7 @@
             android:background="@drawable/edt_back"
             android:hint="email"
             android:inputType="textEmailAddress"
-            android:paddingHorizontal="5dp"
+            android:paddingHorizontal="18dp"
             android:paddingVertical="8dp" />
 
 
@@ -71,7 +71,7 @@
             android:background="@drawable/edt_back"
             android:hint="phone number"
             android:inputType="phone"
-            android:paddingHorizontal="5dp"
+            android:paddingHorizontal="18dp"
             android:paddingVertical="8dp" />
 
         <EditText
@@ -84,7 +84,7 @@
             android:inputType="textPassword"
             android:maxEms="16"
             android:minEms="4"
-            android:paddingHorizontal="5dp"
+            android:paddingHorizontal="18dp"
             android:paddingVertical="8dp" />
 
 
@@ -102,17 +102,20 @@
             android:layout_height="wrap_content"
             android:gravity="center">
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginEnd="5dp"
-                android:src="@drawable/facebook" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If you have an account, please "
+                android:textColor="@color/black"
+                android:textSize="20sp" />
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="5dp"
-                android:src="@drawable/google" />
+            <TextView
+                android:id="@+id/go_sign_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sign in"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
         </LinearLayout>
 
     </LinearLayout>
