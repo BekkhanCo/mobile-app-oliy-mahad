@@ -4,25 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+
     android:layout_marginHorizontal="5dp"
-    android:layout_marginVertical="20dp"
+    android:layout_marginVertical="10dp"
     tool:cardCornerRadius="10dp"
-    tool:cardElevation="8dp">
+    tool:cardElevation="15dp">
+
+    <FrameLayout
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:background="@color/green"
+        android:layout_gravity="end"/>
+
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="4dp"
+        android:paddingEnd="2dp">
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/course_image"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="0dp"
-            android:layout_height="200dp"
+            android:layout_height="150dp"
             android:layout_marginEnd="5dp"
             android:layout_weight="4"
-            android:scaleType="fitXY"
-            android:src="@drawable/post_image"
-            tool:shapeAppearanceOverlay="@style/circular" />
+            android:background="@drawable/course_back">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/course_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="4"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_image"
+                tool:shapeAppearanceOverlay="@style/circular"
+                tool:layout_constraintStart_toStartOf="parent"
+                tool:layout_constraintTop_toTopOf="parent"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="0dp"
@@ -33,29 +57,46 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="4"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
                         tool:cardBackgroundColor="@color/green"
-                        tool:cardCornerRadius="10dp">
+                        tool:cardCornerRadius="10dp"
 
-                        <TextView
+                        >
+
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="Active"
-                            android:textColor="@color/yellow"
-                            android:textSize="15sp" />
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:padding="2dp"
+                                android:src="@drawable/ic_check" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Active"
+                                android:textColor="@color/deep_white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
 
@@ -63,29 +104,34 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
                         android:layout_weight="1"
                         android:src="@drawable/ic_calendar" />
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="4"
-                        android:gravity="center"
-                        android:text="40 days ago"
-                        android:textColor="@color/black"
-                        android:textSize="15sp" />
+                        android:gravity="center_vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3 month"
+                            android:textColor="@color/grey_font"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/course_title"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_marginVertical="5dp"
-                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:gravity="center_vertical"
-                    android:paddingStart="8dp"
                     android:textColor="@color/black"
-                    android:textSize="17sp"
+                    android:textSize="19sp"
                     android:textStyle="bold"
                     tools:text="This is a field for title" />
 
@@ -96,28 +142,27 @@
                     android:layout_weight="3"
                     android:background="@color/white"
                     android:fontFamily="sans-serif-condensed"
-                    android:padding="8dp"
-                    android:textColor="@color/black"
-                    tools:text="this is how does our text view that is targeted for description of the course look">
+                    android:textSize="7pt"
+                    android:ellipsize="end"
+                    android:minLines="1"
+                    android:maxLines="3"
+                    tools:text="this is how does our text view that is targeted for description of the course look" />
 
-                </TextView>
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="3"-->
+<!--                    android:orientation="horizontal">-->
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="3"
-                    android:orientation="horizontal">
-
-                    <com.google.android.material.button.MaterialButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="20dp"
-                        android:backgroundTint="@color/yellow"
-                        android:text="Go To Book"
-                        android:textColor="@color/white"
-                        tool:cornerRadius="10dp" />
-                </LinearLayout>
+<!--                    <com.google.android.material.button.MaterialButton-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:backgroundTint="@color/yellow"-->
+<!--                        android:text="Go To Book"-->
+<!--                        android:textColor="@color/deep_white"-->
+<!--                        tool:cornerRadius="10dp" />-->
+<!--                </LinearLayout>-->
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
