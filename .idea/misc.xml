@@ -5,15 +5,19 @@
       <map>
         <entry key="app/src/main/res/drawable/course_back.xml" value="0.1225" />
         <entry key="app/src/main/res/drawable/ic_calendar.xml" value="0.2015" />
+        <entry key="app/src/main/res/drawable/ic_person.xml" value="0.1555" />
+        <entry key="app/src/main/res/drawable/ic_refresh.xml" value="0.1555" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.1555" />
         <entry key="app/src/main/res/drawable/icon_home.xml" value="0.1225" />
         <entry key="app/src/main/res/drawable/image_back.xml" value="0.1555" />
+        <entry key="app/src/main/res/drawable/search_back.xml" value="0.1555" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17028985507246377" />
         <entry key="app/src/main/res/layout/activity_post.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.22" />
         <entry key="app/src/main/res/layout/card_post.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/courses_fragment.xml" value="0.21" />
         <entry key="app/src/main/res/layout/courses_item.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/events_fragment.xml" value="0.17028985507246377" />
+        <entry key="app/src/main/res/layout/events_fragment.xml" value="0.33" />
         <entry key="app/src/main/res/layout/my_courses_fragment.xml" value="0.17028985507246377" />
         <entry key="app/src/main/res/layout/notifications_fragment.xml" value="0.17028985507246377" />
         <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.19375" />

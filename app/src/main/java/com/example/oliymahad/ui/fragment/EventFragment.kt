@@ -1,15 +1,13 @@
-package com.example.oliymahad.ui.fragments
+package com.example.oliymahad.ui.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.inflate
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.models.SlideModel
 import com.example.oliymahad.R
-import com.example.oliymahad.databinding.ActivityMainBinding.inflate
 import com.example.oliymahad.databinding.EventsFragmentBinding
 
 class EventFragment:Fragment(R.layout.events_fragment) {
