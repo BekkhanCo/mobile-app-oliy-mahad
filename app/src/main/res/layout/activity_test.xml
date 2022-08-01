@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".ui.test"
+    >
 
     //bar
     <!--    <LinearLayout-->
@@ -196,13 +198,13 @@
                 android:padding="10dp"
                 android:gravity="bottom"
                 >
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:text="Register to course"
-                android:textSize="17sp"
-                app:cornerRadius="7dp"
-                />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Register to course"
+                    android:textSize="17sp"
+                    app:cornerRadius="7dp"
+                    />
 
             </LinearLayout>
 
