@@ -16,6 +16,9 @@
         android:theme="@style/Theme.OliyMahad"
         tools:targetApi="31">
         <activity
+            android:name=".ui.test"
+            android:exported="false" />
+        <activity
             android:name=".ui.SignIn"
             android:exported="false" />
         <activity
