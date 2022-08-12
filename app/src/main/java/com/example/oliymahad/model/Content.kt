@@ -1,6 +1,6 @@
 package com.example.oliymahad.model
 
-data class CourseModel(
+data class Content(
     val description: String,
     val duration: Double,
     val id: Int,

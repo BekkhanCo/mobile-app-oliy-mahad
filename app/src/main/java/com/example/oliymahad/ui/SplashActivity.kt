@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
-import com.example.oliymahad.R
 import com.example.oliymahad.databinding.ActivitySplashBinding
 
 
@@ -18,9 +17,10 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         Handler().postDelayed({
+//            startActivity(Intent(this@SplashActivity, MainActivity::class.java))
             startActivity(Intent(this@SplashActivity, MainActivity::class.java))
             finish()
-        }, 5000)
+        }, 1000)
 
     }
 }

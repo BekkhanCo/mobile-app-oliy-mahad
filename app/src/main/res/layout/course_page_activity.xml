@@ -4,8 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".ui.PostActivity">
+    android:orientation="vertical">
+
+    //bar
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@color/green"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:gravity="center_vertical">-->
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -101,6 +108,8 @@
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
+                //duration
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -118,10 +127,10 @@
                         android:id="@+id/postDate"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="3 month 5 days"
                         android:textColor="@color/black"
                         android:textSize="22sp"
-                        android:textStyle="bold"
-                        tools:text="3 month 5 days" />
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -139,13 +148,12 @@
                         android:src="@drawable/ic_price" />
 
                     <TextView
-                        android:id="@+id/postPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="1,300,000 UZS"
                         android:textColor="@color/black"
                         android:textSize="22sp"
-                        android:textStyle="bold"
-                        tools:text="1,300,000 UZS" />
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -177,7 +185,6 @@
                     android:text="This sub-module is an extension of REST API Basics, and it covers such topics as pagination, sorting, filtering and HATEOAS. Please imagine that your application has a lot of data, so when you make a GET request it will return, for instance, 1 million records. This will take much time to process such request and return the result to the consumer of your API. \n\n That is exactly what pagination, sorting, and filtering can solve. The other topic is HATEOAS what stands for the phrase . When you are viewing a web page, you see data on it and can perform some actions with this data. In REST when you request a resource you get the details of the resource in the response. Along with it you can send the operations that you can perform on the resource. And this is what HATEOAS does."
                     android:textSize="18sp" />
             </LinearLayout>
-
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -186,16 +193,16 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:padding="10dp"
                 android:gravity="bottom"
-                android:paddingHorizontal="10dp">
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/registerCourse"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:text="Register to course"
-                    android:textSize="17sp"
-                    app:cornerRadius="7dp" />
+                >
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Register to course"
+                android:textSize="17sp"
+                app:cornerRadius="7dp"
+                />
 
             </LinearLayout>
 
