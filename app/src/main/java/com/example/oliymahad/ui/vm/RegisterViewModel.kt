@@ -1,6 +1,5 @@
 package com.example.oliymahad.ui.vm
 
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -20,7 +19,6 @@ class RegisterViewModel(private val registerRepository: RegisterRepository) : Vi
     fun registerUser(userRegister: UserRegister) = viewModelScope.launch {
         user.postValue(Resource.Loading())
         val response = registerRepository.registerUser(userRegister)
-        Log.d("salom", response.body().toString())
         user.postValue(handleRegisterResponse(response))
     }
 

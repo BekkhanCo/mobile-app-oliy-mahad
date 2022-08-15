@@ -25,8 +25,7 @@ object RetrofitInstance {
             .readTimeout(2, TimeUnit.MINUTES)
             .addInterceptor(
                 InterceptorAuth(
-                    "Bearer",
-                    "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIrOTk4OTE2NjQ1MjYyIiwicm9sZSI6W3siaWQiOjEsInJvbGVOYW1lIjoiUk9MRV9VU0VSIiwiYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpYXQiOjE2NjAwMzExMzcsImV4cCI6MTY2MDAzNzEzN30.moTLEFMknOjU7CkdexiwwQJmjIcY1bddbX9b11KaX8MWoFzCRXSuqLBeKyv3Inz6HXlmhZUo10lI6GNpXAursw"
+                    "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIrOTk4OTE2NjQ1MjYyIiwicm9sZSI6W3siaWQiOjEsInJvbGVOYW1lIjoiUk9MRV9VU0VSIiwiYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJpYXQiOjE2NjA1NTkxODYsImV4cCI6MTY2MDU2NTE4Nn0.oCIeF77gNv71yASvP-zIs4LvlfR3OT1UeyK9M23Sl3HSHeNlY8ZQLNKjAdnhW2kT1UMbD6rBAxU-R-THVXsPqw"
                 )
             )
             .build()

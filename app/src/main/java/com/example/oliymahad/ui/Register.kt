@@ -1,12 +1,11 @@
 package com.example.oliymahad.ui
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.get
 import com.example.oliymahad.api.repository.RegisterRepository
 import com.example.oliymahad.databinding.ActivityRegisterBinding
 import com.example.oliymahad.model.UserRegister
@@ -41,7 +40,7 @@ class Register : AppCompatActivity() {
             }
 
             val user = UserRegister(
-               email =  binding.userEmail.text.toString().trim(),
+                email = binding.userEmail.text.toString().trim(),
                 password = binding.userPassword.text.toString().trim(),
                 phoneNumber = binding.userPhone.text.toString().trim()
             )
@@ -52,19 +51,24 @@ class Register : AppCompatActivity() {
         viewModel.user.observe(this) {
             when (it) {
                 is Resource.Success -> {
-                    Log.d("REGISTER", it.data.toString())
+                    binding.pbRegisterBtn.visibility = View.INVISIBLE
+                    binding.registerText.visibility = View.VISIBLE
                 }
                 is Resource.Error -> {
-
-                    Log.d("ERROrr", it.message.toString())
+                    binding.pbRegisterBtn.visibility = View.INVISIBLE
+                    binding.registerText.visibility = View.VISIBLE
                 }
                 is Resource.Loading -> {
-                    Log.d("LOADING", "loading..")
+                    binding.pbRegisterBtn.visibility = View.VISIBLE
+                    binding.registerText.visibility = View.INVISIBLE
                 }
             }
         }
 
         binding.goSignIn.setOnClickListener {
+            binding.userEmail.text.clear()
+            binding.userPassword.text.clear()
+            binding.userPhone.text.clear()
             onBackPressed()
         }
     }

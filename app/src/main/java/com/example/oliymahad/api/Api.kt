@@ -16,4 +16,10 @@ interface Api {
     suspend fun register(
         @Body userRegisterRequest: UserRegister
     ): Response<AuthModel>
+
+    @Headers("Content-Type: application/json")
+    @POST("user/auth/login")
+    suspend fun login(
+        @Body userLoginRequest: UserLogin
+    ): Response<AuthModel>
 }
